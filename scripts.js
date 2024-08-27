@@ -22,13 +22,20 @@ document.querySelector('.btn__up').addEventListener('click', function (e) {
 
 
 // Функция для создания карточек
+const cardsContainer = document.getElementById('cards-container');
+const showMoreButton = document.getElementById('show-more-product');
+
+let allCardData = [];
+let visibleCardsCount = 18; // Количество карточек, отображаемых по умолчанию
+const cardsPerPage = 18; // Количество карточек, показываемых при нажатии "Показать еще"
+
+// Функция для создания HTML-кода карточки
 function createCard(cardData) {
     return `
       <div class="content__body-card card">
         <div class="card__head ${cardData.ratingClass}">
           <p>${cardData.ratingText}</p>
         </div>
-
         <div class="card__body">
           <div class="card__body-head">
             <div class="ava">
@@ -77,13 +84,28 @@ function createCard(cardData) {
     `;
 }
 
-// Загрузка данных и добавление карточек на страницу
+// Функция для отображения карточек
+function displayCards(startIndex, endIndex) {
+    const cardsToDisplay = allCardData.slice(startIndex, endIndex);
+    const cardsHTML = cardsToDisplay.map(createCard).join('');
+    cardsContainer.innerHTML += cardsHTML;
+}
+
+// Загрузка данных и отображение карточек
 fetch('data.json')
     .then(response => response.json())
     .then(data => {
-        const container = document.getElementById('cards-container');
-        data.forEach(cardData => {
-            container.innerHTML += createCard(cardData);
+        allCardData = data;
+        displayCards(0, visibleCardsCount);
+
+        showMoreButton.addEventListener('click', () => {
+            const nextIndex = visibleCardsCount;
+            visibleCardsCount += cardsPerPage;
+            if (nextIndex < allCardData.length) {
+                displayCards(nextIndex, visibleCardsCount);
+            } else {
+                showMoreButton.style.display = 'none'; // Скрыть кнопку, если нет больше карточек
+            }
         });
     })
     .catch(error => console.error('Error loading JSON:', error));

@@ -550,6 +550,19 @@ aside {
   border-radius: 8px;
 }
 
+.btn__show-more{
+  padding: 16px;
+  background-color: #3ab25b;
+  border-color: #3ab25b;
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+  max-width: 160px;
+  margin: 0 auto;
+  margin-top: 60px;
+  cursor: pointer;
+}
+
 /* End Main */
 
 /* Aside */

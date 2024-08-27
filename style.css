@@ -226,6 +226,7 @@ header {
 .header__popup-menu ul li a {
   color: #000;
   font-size: 24px;
+  font-size: clamp(16px, 1.463vw, 24px);
   text-decoration: none;
 }
 
@@ -280,7 +281,7 @@ header {
   width: 270px;
   background: #3ab25b;
   border-radius: 8px;
-
+  font-size: clamp(14px, 0.976vw, 16px);
   border: none;
   color: #fff;
   cursor: pointer;
@@ -945,6 +946,10 @@ footer {
     -ms-flex-direction: column;
     flex-direction: column;
     gap: 20px;
+  }
+
+  .sidebar__ads{
+    background-size: contain;
   }
 
   .content__head-filter {

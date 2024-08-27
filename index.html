@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Авто отзыв</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <div class="header__logo">
+          <a href="#">
+            <img src="/img/logo.svg" alt="logo" />
+          </a>
+        </div>
+
+        <div class="header__menu menu">
+          <ul class="menu__items">
+            <li class="menu__item">
+              <a class="menu__link active" href="#">Главная</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Отзывы</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Обратная связь</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Правила</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="header__search search">
+          <div class="search__input">
+            <input type="text" placeholder="Поиск по автосалонам" />
+            <img src="/img/search-logo.svg" alt="search" />
+          </div>
+        </div>
+        <div class="header__menu-icon" id="menuIcon">
+          <svg
+            width="38"
+            height="38"
+            viewBox="0 0 38 38"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              class="menu-icon__background"
+              width="38"
+              height="38"
+              rx="8"
+              fill="#3AB25B"
+            />
+            <rect
+              class="menu-icon__line menu-icon__line--bottom"
+              width="15"
+              height="2"
+              rx="1"
+              x="14"
+              y="26"
+              fill="white"
+            />
+            <rect
+              class="menu-icon__line menu-icon__line--middle"
+              width="20"
+              height="2"
+              rx="1"
+              x="9"
+              y="20"
+              fill="white"
+            />
+            <rect
+              class="menu-icon__line menu-icon__line--top"
+              width="20"
+              height="2"
+              rx="1"
+              x="9"
+              y="14"
+              fill="white"
+            />
+          </svg>
+        </div>
+
+        <nav class="header__popup-menu" id="popupMenu">
+          <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Обратная связь</a></li>
+            <li><a href="#">Правила</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="intro">
+      <div class="intro__container">
+        <div class="intro__review">
+          <h1 class="intro__title">Отзывы об автосалонах по всей России</h1>
+          <p class="intro__text">
+            Мы собираем только реальные отзывы покупателей и посетителей
+            автосалонов, чтобы поделиться ими с Вами! Надеемся, и Вы примите
+            активное участие в обсуждениях, и не станете жертвой автообмана!
+          </p>
+          <button class="intro__button">Найти отзывы об автосалоне</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="main__container">
+        <div class="main__content content">
+          <div class="content__head">
+            <h2 class="content__head-title">Выберите <span>город</span></h2>
+
+            <div class="content__head-filter">
+              <p>Сортировать <span>по популярности</span></p>
+              <svg
+                width="10"
+                height="6"
+                viewBox="0 0 10 6"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.83392 1.38542L5.49751 5.35647C5.36159 5.48042 5.17527 5.51931 5.00026 5.49133C4.82413 5.51931 4.63837 5.48094 4.50245 5.35647L0.166072 1.38542C-0.055398 1.18315 -0.055398 0.85487 0.166072 0.652087C0.38692 0.449304 0.745404 0.449304 0.966845 0.652087L4.9997 4.34516L9.03312 0.652087C9.25399 0.449304 9.61248 0.449304 9.83392 0.652087C10.0554 0.854355 10.0554 1.18264 9.83392 1.38542Z"
+                  fill="#181818"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <div class="content__body">
+            <div class="content__body-cards">
+              <div class="content__body-card card">
+                <div class="card__head high-rating">
+                  <p>Высокий рейтинг доверия</p>
+                </div>
+
+                <div class="card__body">
+                  <div class="card__body-head">
+                    <div class="ava">
+                      <img src="/img/1.png" alt="image" />
+                    </div>
+                    <div class="name">
+                      <h3>CRYSTAL MOTORS</h3>
+                      <div class="name__review">
+                        <img src="/img/rating-star.svg" alt="rating" />
+                        <p>4,9 <span>246 отзывов</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__body-info">
+                    <div class="info-table">
+                      <div class="info-row">
+                        <div class="info-cell label">Город:</div>
+                        <div class="info-cell value">Челябинск</div>
+                      </div>
+                      <div class="info-row">
+                        <div class="info-cell label">Адрес:</div>
+                        <div class="info-cell value">
+                          Университетская Набережная, 68
+                        </div>
+                      </div>
+                      <div class="info-row">
+                        <div class="info-cell label">Телефон:</div>
+                        <div class="info-cell value">
+                          <a href="tel:+73512207813">+7 (351) 220-78-13</a>
+                        </div>
+                      </div>
+                      <div class="info-row">
+                        <div class="info-cell label">Сайт:</div>
+                        <div class="info-cell value">
+                          <a href="http://crystal-motors.ru" target="_blank"
+                            >crystal-motors.ru</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__body-btns">
+                    <a href="#" class="btn btn-learn-more">Подробнее</a>
+                    <a href="#" class="btn btn-link"
+                      ><img src="/img/link-icon.svg" alt="link icon"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="content__body-card card">
+                <div class="card__head negative-rating">
+                  <p>Высокий рейтинг доверия</p>
+                </div>
+
+                <div class="card__body">
+                  <div class="card__body-head">
+                    <div class="ava">
+                      <img src="/img/1.png" alt="image" />
+                    </div>
+                    <div class="name">
+                      <h3>CRYSTAL MOTORS</h3>
+                      <div class="name__review">
+                        <img src="/img/rating-star.svg" alt="rating" />
+                        <p>4,9 <span>246 отзывов</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__body-info">
+                    <div class="info-table">
+                      <div class="info-row">
+                        <div class="info-cell label">Город:</div>
+                        <div class="info-cell value">Челябинск</div>
+                      </div>
+                      <div class="info-row">
+                        <div class="info-cell label">Адрес:</div>
+                        <div class="info-cell value">
+                          Университетская Набережная, 68
+                        </div>
+                      </div>
+                      <div class="info-row">
+                        <div class="info-cell label">Телефон:</div>
+                        <div class="info-cell value">
+                          <a href="tel:+73512207813">+7 (351) 220-78-13</a>
+                        </div>
+                      </div>
+                      <div class="info-row">
+                        <div class="info-cell label">Сайт:</div>
+                        <div class="info-cell value">
+                          <a href="http://crystal-motors.ru" target="_blank"
+                            >crystal-motors.ru</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__body-btns">
+                    <a href="#" class="btn btn-learn-more">Подробнее</a>
+                    <a href="#" class="btn btn-link"
+                      ><img src="/img/link-icon.svg" alt="link icon"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="content__body-card card">
+                <div class="card__head few-rating">
+                  <p>Высокий рейтинг доверия</p>
+                </div>
+
+                <div class="card__body">
+                  <div class="card__body-head">
+                    <div class="ava">
+                      <img src="/img/1.png" alt="image" />
+                    </div>
+                    <div class="name">
+                      <h3>CRYSTAL MOTORS</h3>
+                      <div class="name__review">
+                        <img src="/img/rating-star.svg" alt="rating" />
+                        <p>4,9 <span>246 отзывов</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__body-info">
+                    <div class="info-table">
+                      <div class="info-row">
+                        <div class="info-cell label">Город:</div>
+                        <div class="info-cell value">Челябинск</div>
+                      </div>
+                      <div class="info-row">
+                        <div class="info-cell label">Адрес:</div>
+                        <div class="info-cell value">
+                          Университетская Набережная, 68
+                        </div>
+                      </div>
+                      <div class="info-row">
+                        <div class="info-cell label">Телефон:</div>
+                        <div class="info-cell value">
+                          <a href="tel:+73512207813">+7 (351) 220-78-13</a>
+                        </div>
+                      </div>
+                      <div class="info-row">
+                        <div class="info-cell label">Сайт:</div>
+                        <div class="info-cell value">
+                          <a href="http://crystal-motors.ru" target="_blank"
+                            >crystal-motors.ru</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__body-btns">
+                    <a href="#" class="btn btn-learn-more">Подробнее</a>
+                    <a href="#" class="btn btn-link"
+                      ><img src="/img/link-icon.svg" alt="link icon"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="content__body-card card">
+                <div class="card__head negative-rating">
+                  <p>Высокий рейтинг доверия</p>
+                </div>
+
+                <div class="card__body">
+                  <div class="card__body-head">
+                    <div class="ava">
+                      <img src="/img/1.png" alt="image" />
+                    </div>
+                    <div class="name">
+                      <h3>CRYSTAL MOTORS</h3>
+                      <div class="name__review">
+                        <img src="/img/rating-star.svg" alt="rating" />
+                        <p>4,9 <span>246 отзывов</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__body-info">
+                    <div class="info-table">
+                      <div class="info-row">
+                        <div class="info-cell label">Город:</div>
+                        <div class="info-cell value">Челябинск</div>
+                      </div>
+                      <div class="info-row">
+                        <div class="info-cell label">Адрес:</div>
+                        <div class="info-cell value">
+                          Университетская Набережная, 68
+                        </div>
+                      </div>
+                      <div class="info-row">
+                        <div class="info-cell label">Телефон:</div>
+                        <div class="info-cell value">
+                          <a href="tel:+73512207813">+7 (351) 220-78-13</a>
+                        </div>
+                      </div>
+                      <div class="info-row">
+                        <div class="info-cell label">Сайт:</div>
+                        <div class="info-cell value">
+                          <a href="http://crystal-motors.ru" target="_blank"
+                            >crystal-motors.ru</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__body-btns">
+                    <a href="#" class="btn btn-learn-more">Подробнее</a>
+                    <a href="#" class="btn btn-link"
+                      ><img src="/img/link-icon.svg" alt="link icon"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="content__body-card card">
+                <div class="card__head few-rating">
+                  <p>Высокий рейтинг доверия</p>
+                </div>
+
+                <div class="card__body">
+                  <div class="card__body-head">
+                    <div class="ava">
+                      <img src="/img/1.png" alt="image" />
+                    </div>
+                    <div class="name">
+                      <h3>CRYSTAL MOTORS</h3>
+                      <div class="name__review">
+                        <img src="/img/rating-star.svg" alt="rating" />
+                        <p>4,9 <span>246 отзывов</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__body-info">
+                    <div class="info-table">
+                      <div class="info-row">
+                        <div class="info-cell label">Город:</div>
+                        <div class="info-cell value">Челябинск</div>
+                      </div>
+                      <div class="info-row">
+                        <div class="info-cell label">Адрес:</div>
+                        <div class="info-cell value">
+                          Университетская Набережная, 68
+                        </div>
+                      </div>
+                      <div class="info-row">
+                        <div class="info-cell label">Телефон:</div>
+                        <div class="info-cell value">
+                          <a href="tel:+73512207813">+7 (351) 220-78-13</a>
+                        </div>
+                      </div>
+                      <div class="info-row">
+                        <div class="info-cell label">Сайт:</div>
+                        <div class="info-cell value">
+                          <a href="http://crystal-motors.ru" target="_blank"
+                            >crystal-motors.ru</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__body-btns">
+                    <a href="#" class="btn btn-learn-more">Подробнее</a>
+                    <a href="#" class="btn btn-link"
+                      ><img src="/img/link-icon.svg" alt="link icon"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="content__body-card card">
+                <div class="card__head high-rating">
+                  <p>Высокий рейтинг доверия</p>
+                </div>
+
+                <div class="card__body">
+                  <div class="card__body-head">
+                    <div class="ava">
+                      <img src="/img/1.png" alt="image" />
+                    </div>
+                    <div class="name">
+                      <h3>CRYSTAL MOTORS</h3>
+                      <div class="name__review">
+                        <img src="/img/rating-star.svg" alt="rating" />
+                        <p>4,9 <span>246 отзывов</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__body-info">
+                    <div class="info-table">
+                      <div class="info-row">
+                        <div class="info-cell label">Город:</div>
+                        <div class="info-cell value">Челябинск</div>
+                      </div>
+                      <div class="info-row">
+                        <div class="info-cell label">Адрес:</div>
+                        <div class="info-cell value">
+                          Университетская Набережная, 68
+                        </div>
+                      </div>
+                      <div class="info-row">
+                        <div class="info-cell label">Телефон:</div>
+                        <div class="info-cell value">
+                          <a href="tel:+73512207813">+7 (351) 220-78-13</a>
+                        </div>
+                      </div>
+                      <div class="info-row">
+                        <div class="info-cell label">Сайт:</div>
+                        <div class="info-cell value">
+                          <a href="http://crystal-motors.ru" target="_blank"
+                            >crystal-motors.ru</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__body-btns">
+                    <a href="#" class="btn btn-learn-more">Подробнее</a>
+                    <a href="#" class="btn btn-link"
+                      ><img src="/img/link-icon.svg" alt="link icon"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <aside class="sidebar">
+          <div class="sidebar__container">
+            <div class="sidebar__rating-company">
+              <h2>Рейтинг автосалонов</h2>
+              <div class="company">
+                <h3>1 место</h3>
+                <div class="company__card">
+                  <div class="company__card-top">
+                    <div class="company__card-ava">
+                      <img src="/img/1.png" alt="ava" />
+                    </div>
+                    <div class="company__card-info">
+                      <h4>CRYSTAL MOTORS</h4>
+                      <span>246 отзывов</span>
+                    </div>
+                  </div>
+
+                  <div class="company__card-rating">
+                    <img src="/img/rating-star.svg" alt="ratign icon" />
+                    4,9
+                  </div>
+                </div>
+              </div>
+              <div class="company">
+                <h3>2 место</h3>
+                <div class="company__card">
+                  <div class="company__card-top">
+                    <div class="company__card-ava">
+                      <img src="/img/1.png" alt="ava" />
+                    </div>
+                    <div class="company__card-info">
+                      <h4>CRYSTAL MOTORS</h4>
+                      <span>246 отзывов</span>
+                    </div>
+                  </div>
+
+                  <div class="company__card-rating">
+                    <img src="/img/rating-star.svg" alt="ratign icon" />
+                    4,9
+                  </div>
+                </div>
+              </div>
+              <div class="company">
+                <h3>3 место</h3>
+                <div class="company__card">
+                  <div class="company__card-top">
+                    <div class="company__card-ava">
+                      <img src="/img/1.png" alt="ava" />
+                    </div>
+                    <div class="company__card-info">
+                      <h4>CRYSTAL MOTORS</h4>
+                      <span>246 отзывов</span>
+                    </div>
+                  </div>
+
+                  <div class="company__card-rating">
+                    <img src="/img/rating-star.svg" alt="ratign icon" />
+                    4,9
+                  </div>
+                </div>
+              </div>
+              <p class="sidebar__rating-foot">
+                Последнее обновление информации: 22.01.2024 г.
+              </p>
+            </div>
+            <div class="sidebar__ads">
+              <p>Реклама</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__container desktop">
+        <div class="footer__head">
+          <div class="head__left">
+            <div class="footer__logo">
+              <a href="#">
+                <img src="/img/logo.svg" alt="logo" />
+              </a>
+            </div>
+
+            <div class="footer__menu menu">
+              <ul class="menu__items">
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Отзывы</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Обратная связь</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Правила</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Политика конфиденциальности</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer__btns">
+            <button class="footer__btn btn__add">Добавить автосалон</button>
+            <a href="#" class="footer__btn btn__up">
+              <img src="/img/arrow-top.svg" alt="arr-top" />
+            </a>
+          </div>
+        </div>
+        <p class="footer__foot">© 2024 Авто отзыв. Все права защищены.</p>
+      </div>
+
+      <div class="footer__container tablet">
+        <div class="footer__head">
+          <div class="head__left">
+            <div class="footer__logo">
+              <a href="#">
+                <img src="/img/logo.svg" alt="logo" />
+              </a>
+            </div>
+          </div>
+
+          <div class="footer__btns">
+            <button class="footer__btn btn__add">Добавить автосалон</button>
+            <a href="#" class="footer__btn btn__up">
+              <img src="/img/arrow-top.svg" alt="arr-top" />
+            </a>
+          </div>
+        </div>
+        <div class="footer__menu menu">
+          <ul class="menu__items">
+            <li class="menu__item">
+              <a class="menu__link" href="#">Отзывы</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Обратная связь</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Правила</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Политика конфиденциальности</a>
+            </li>
+          </ul>
+        </div>
+        <p class="footer__foot">© 2024 Авто отзыв. Все права защищены.</p>
+      </div>
+
+      <div class="footer__container mobile">
+        <div class="footer__head">
+          <div class="head__left">
+            <div class="footer__logo">
+              <a href="#">
+                <img src="/img/logo.svg" alt="logo" />
+              </a>
+            </div>
+          </div>
+
+          <div class="footer__btns">
+            <a href="#" class="footer__btn btn__up">
+              <img src="/img/arrow-top.svg" alt="arr-top" />
+            </a>
+          </div>
+        </div>
+        <button class="footer__btn btn__add">Добавить автосалон</button>
+        <div class="footer__menu menu">
+          <ul class="menu__items">
+            <li class="menu__item">
+              <a class="menu__link" href="#">Отзывы</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Обратная связь</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Правила</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Политика конфиденциальности</a>
+            </li>
+          </ul>
+        </div>
+        <p class="footer__foot">© 2024 Авто отзыв. Все права защищены.</p>
+      </div>
+    </footer>
+
+    <script src="/scripts.js"></script>
+  </body>
+</html>

@@ -191,7 +191,7 @@ header {
   align-items: center;
   justify-content: space-between;
 
-  background: url(/img/home-bg.png) no-repeat;
+  background: url(/img/home-bg.webp) no-repeat;
 
   background-position: right;
 }
@@ -536,7 +536,7 @@ aside {
 .sidebar__ads {
   width: 100%;
   min-height: 360px;
-  background: url(img/ads-img.png) no-repeat;
+  background: url(img/ads-img.webp) no-repeat;
   background-size: cover;
   border-radius: 8px;
 
@@ -685,7 +685,7 @@ footer {
   }
 
   .intro__container {
-    background: url("img/home-bg-tablet.png") no-repeat;
+    background: url("img/home-bg-tablet.webp") no-repeat;
     background-size: cover;
   }
 
